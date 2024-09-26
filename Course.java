@@ -41,10 +41,11 @@ public class Course {
 
     public void Courseinfo (){
         System.out.println("Description : " +description);
-    }
-
-    public void greeting (){
         System.out.println("Succes buy course : "+name_course);
         System.out.println("Rp : " +price);
+    }
+    public void ChooseCourse (){
+        System.out.println("HTML");
+        System.out.println("JavaScript");
     }
 }
