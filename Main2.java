@@ -8,7 +8,7 @@ public class Main2 {
         System.out.println("Welcome to E-Course");
 
         // Create instances of your classes
-        Instructorr instructor1 = new Instructorr(1223, "majid", "Erwan Majid", "Basic Program");
+        Instructorr instructor1 = new Instructorr(1223, "Majid", "Erwan Majid", "Basic Program");
         Participant participant1 = new Participant(9990, "Arka", "Febrian Arka", "Basic Program");
         Course course1 = new Course(1873, "Basic Program", "This session is to practice basic programming in HTML", 19000);
         Video video1 = new Video(3840, "2 Hours", "Basic HTML 1", "Video");
@@ -30,7 +30,7 @@ public class Main2 {
         System.out.println("3. View Payment Details");
         System.out.println("4. View Video Info");
         System.out.println("5. Exit");
-
+        System.out.print("Choose : ");
         int choice = scanner.nextInt();
         switch (choice) {
             case 1:
@@ -39,8 +39,8 @@ public class Main2 {
                 break;
             case 2:
                 System.out.println("\nInstructor Info:");
-                instructor.infoinstructor();
                 instructor.introduceSelf();
+                instructor.infoinstructor();
                 break;
             case 3:
                 System.out.println("\nPayment Details:");

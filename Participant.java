@@ -1,11 +1,12 @@
 public class Participant extends Person {
     private int id_participant;
     private String lesson;
+    private Course name_course;
     
-    public Participant (int id_participant, String nickName,String fullName,String lesson){
+    public Participant (int id_participant, String nickName,String fullName,Course name_course){
         super(nickName, fullName);
         this.id_participant = id_participant;
-        this.lesson = lesson;
+        this.lesson = name_course.getNameCourse();
     }
 
     public int getid_participant(){
@@ -17,11 +18,13 @@ public class Participant extends Person {
     }
 
     public void introduceSelf() {
+        System.out.println("-------------------------------------------------------------------------------------------------------");
         System.out.println("Hello, I am Participant " + getnickName() + ", ready to learn!" + lesson);
     }
 
     public void infoParticipant(){
         System.out.println("Name participant "+getnickName());
+        System.out.println("ID " +id_participant);
         System.out.println("Participant : " +lesson);
     }
 
