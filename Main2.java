@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class Main2 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);  // Initialize the scanner
+        Scanner scanner = new Scanner(System.in);  
         boolean menu = true;
 
         System.out.println("Welcome to E-Course");
 
         // Create instances of your classes
-        Instructorr instructor1 = new Instructorr(1223, "Majid", "Erwan Majid", "Basic Program");
-        Participant participant1 = new Participant(9990, "Arka", "Febrian Arka", "Basic Program");
         Course course1 = new Course(1873, "Basic Program", "This session is to practice basic programming in HTML", 19000);
+        Instructorr instructor1 = new Instructorr(1902, "Majid", "Erwan Majid", course1);
+        Participant participant1 = new Participant(998, "Arka", "Febrian Arka", course1);
         Video video1 = new Video(3840, "2 Hours", "Basic HTML 1", "Video");
         Payment payment1 = new Payment(84848, 27, 19000, "Transfer");
 
@@ -29,13 +29,14 @@ public class Main2 {
         System.out.println("2. View Instructor Info");
         System.out.println("3. View Payment Details");
         System.out.println("4. View Video Info");
+        System.out.println("6. add Course");
         System.out.println("5. Exit");
         System.out.print("Choose : ");
         int choice = scanner.nextInt();
         switch (choice) {
             case 1:
                 System.out.println("\nCourse Details:");
-                System.out.println(course.getdescription());
+                course.Courseinfo();
                 break;
             case 2:
                 System.out.println("\nInstructor Info:");
@@ -53,6 +54,11 @@ public class Main2 {
             case 5:
                 System.out.println("Thank you for visiting E-Course!");
                 return false;  // Exit the menu
+
+            case 6:
+            System.out.println("List course");
+            course.ChooseCourse();
+            
             default:
                 System.out.println("Invalid choice! Please try again.");
         }

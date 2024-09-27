@@ -45,7 +45,10 @@ public class Course {
         System.out.println("Rp : " +price);
     }
     public void ChooseCourse (){
-        System.out.println("HTML");
-        System.out.println("JavaScript");
+        System.out.println("1.HTML");
+        System.out.println("2.JavaScript");
+        System.out.println("3.PHP");
+        System.out.println("--------------------");
+        System.out.println("Sorry System under maintenance");
     }
 }
