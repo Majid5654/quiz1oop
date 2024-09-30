@@ -39,11 +39,6 @@ public class Course {
         this.price = price;
     }
 
-    public void Courseinfo (){
-        System.out.println("Description : " +description);
-        System.out.println("Succes buy course : "+name_course);
-        System.out.println("Rp : " +price);
-    }
     public void ChooseCourse (){
         System.out.println("1.HTML");
         System.out.println("2.JavaScript");
