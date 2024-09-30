@@ -10,11 +10,12 @@ public class Main2 {
         // Create instances of your classes
         Course course1 = new Course(1873, "Basic Program", "This session is to practice basic programming in HTML", 19000);
         Instructorr instructor1 = new Instructorr(1902, "Majid", "Erwan Majid", course1);
-        Participant participant1 = new Participant("Majid", "ERWANNN", course1);
+        Participant participant1 = new Participant("Xavier", "Xavier Zaidane", course1);
         Participant participant2 = new Participant("Arka", "Febrian Arka Samudra", course1);
         Video video1 = new Video(3840, "2 Hours", "Basic HTML 1", "Video");
         Payment payment1 = new Payment(84848, 27, 19000, "Transfer");
 
+        
         // Loop to display the menu
         while (menu) {
             menu = displayMenu(scanner, instructor1, participant1, participant2, course1, payment1, video1);
@@ -24,7 +25,7 @@ public class Main2 {
     }
 
     // Method to display menu options1
-    
+
     private static boolean displayMenu(Scanner scanner, Instructorr instructor, Participant participant1, Participant participant2, Course course, Payment payment, Video video) {
         System.out.println("\nPlease choose an option:");
         System.out.println("1. View Course Details");
