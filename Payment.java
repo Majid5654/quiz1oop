@@ -3,12 +3,14 @@ public class Payment {
     private int tanggal;
     private int jumlah;
     private String metode;
+    private String course;
 
     public Payment(int id_pembayaran, int tanggal, int jumlah, String metode) {
         this.id_pembayaran = id_pembayaran;
         this.tanggal = tanggal;
         this.jumlah = jumlah;
         this.metode = metode;
+        
     }
 
     // Getter and Setter for Encapsulation
@@ -47,4 +49,20 @@ public class Payment {
     public void detailPembayaran() {
         System.out.println("Pembayaran ID: " + id_pembayaran + ", Jumlah: " + jumlah + ", Metode: " + metode + ", Tanggal: " + tanggal);
     }
+
+    public void HTML (){
+        System.out.println("Pembayaran ID: " + id_pembayaran + ", Jumlah: " + jumlah + ", Metode: " + metode + ", Tanggal: " + tanggal);
+    }
+
+    public void Javascript (){
+        System.out.println("Pembayaran ID: " + id_pembayaran + ", Jumlah: " + jumlah + ", Metode: " + metode + ", Tanggal: " + tanggal);
+    }
+
+    public void PHP (){
+        System.out.println("Pembayaran ID: " + id_pembayaran + ", Jumlah: " + jumlah + ", Metode: " + metode + ", Tanggal: " + tanggal);
+    }
+
+
+
 }
+
