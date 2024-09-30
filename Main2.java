@@ -57,24 +57,43 @@ public class Main2 {
                     System.out.println("-------1.HTML-------- ");
                     System.out.println("Input your username");
                     String name = scanner.next();
-                    if (name.equalsIgnoreCase("majid")) {
+                    if (name.equalsIgnoreCase("xavier")) {
                         participant1.infoParticipant();
                         payment1.detailPembayaran();
                     }
                     else if (name.equalsIgnoreCase("arka")) {
                         participant2.infoParticipant();
                         payment2.detailPembayaran();
-                        
+
                     }
                     break;
                 case 2:
-                System.out.print("-----2.Javascript-------");
-                    payment1.Javascript();
+                System.out.println("-----2.Javascript-------");
+                System.out.println("Input your username");
+                String namej = scanner.next();
+                if (namej.equalsIgnoreCase("xavier")) {
+                    participant1.infoParticipant();
+                    payment1.detailPembayaran();
+                }
+                else if (namej.equalsIgnoreCase("arka")) {
+                    participant2.infoParticipant();
+                    payment2.detailPembayaran();
+
+                }
                     break;
                 case 3:
-                System.out.println("3.-----PHP-----");
-                payment1.PHP();
-                default:
+                System.out.println("-----3.PHP-------");
+                System.out.println("Input your username");
+                String namep = scanner.next();
+                if (namep.equalsIgnoreCase("xavier")) {
+                    participant1.infoParticipant();
+                    payment1.detailPembayaran();
+                }
+                else if (namep.equalsIgnoreCase("arka")) {
+                    participant2.infoParticipant();
+                    payment2.detailPembayaran();
+
+                }
                     break;
             }
                 System.out.println("\nPayment Details:");

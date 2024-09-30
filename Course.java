@@ -49,6 +49,6 @@ public class Course {
         System.out.println("2.JavaScript");
         System.out.println("3.PHP");
         System.out.println("--------------------");
-        System.out.println("Sorry System under maintenance");
+        System.out.println("Choose(1-3)");
     }
 }
